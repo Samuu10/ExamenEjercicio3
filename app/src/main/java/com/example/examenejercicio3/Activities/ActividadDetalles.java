@@ -1,10 +1,13 @@
-package com.example.examenejercicio3;
+package com.example.examenejercicio3.Activities;
 
 import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.examenejercicio3.R;
+import com.example.examenejercicio3.Tarea;
 
 public class ActividadDetalles extends AppCompatActivity {
 

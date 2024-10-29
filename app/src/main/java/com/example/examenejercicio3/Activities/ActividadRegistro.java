@@ -1,4 +1,4 @@
-package com.example.examenejercicio3;
+package com.example.examenejercicio3.Activities;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
@@ -11,6 +11,11 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.examenejercicio3.R;
+import com.example.examenejercicio3.RepositorioTarea;
+import com.example.examenejercicio3.Tarea;
+
 import java.util.Calendar;
 
 public class ActividadRegistro extends AppCompatActivity {

@@ -1,4 +1,4 @@
-package com.example.examenejercicio3;
+package com.example.examenejercicio3.Activities;
 
 import android.app.AlertDialog;
 import android.content.Intent;
@@ -7,9 +7,15 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.examenejercicio3.AdaptadorTarea;
+import com.example.examenejercicio3.R;
+import com.example.examenejercicio3.RepositorioTarea;
+import com.example.examenejercicio3.Tarea;
+
 import java.util.List;
 
-public class ActividadTareasPendientes extends AppCompatActivity implements  AdaptadorTarea.OnTareaClickListener {
+public class ActividadTareasPendientes extends AppCompatActivity implements AdaptadorTarea.OnTareaClickListener {
 
     //Variables
     private AdaptadorTarea adapterTarea;
