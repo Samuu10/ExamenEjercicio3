@@ -7,20 +7,18 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.examenejercicio3.AdaptadorTarea;
 import com.example.examenejercicio3.R;
 import com.example.examenejercicio3.RepositorioTarea;
 import com.example.examenejercicio3.Tarea;
-
 import java.util.List;
 
+//Clase que representa la actividad de las tareas pendientes
 public class ActividadTareasPendientes extends AppCompatActivity implements AdaptadorTarea.OnTareaClickListener {
 
     //Variables
     private AdaptadorTarea adapterTarea;
     private RepositorioTarea repositorioTarea;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

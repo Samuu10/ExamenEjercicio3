@@ -2,7 +2,7 @@ package com.example.examenejercicio3;
 
 import java.io.Serializable;
 
-//Clase Tarea que representa una tarea con un nombre, descripción, fecha, prioridad, precio y estado de si está hecha o no
+//Clase Tarea que representa una tarea con sus atributos, implementa Serializable para poder ser guardada en SharedPreferences
 public class Tarea implements Serializable {
 
     //Atributos

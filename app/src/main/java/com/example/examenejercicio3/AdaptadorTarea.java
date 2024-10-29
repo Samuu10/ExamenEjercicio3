@@ -17,17 +17,17 @@ public class AdaptadorTarea extends RecyclerView.Adapter<AdaptadorTarea.TareaVie
     private List<Tarea> listaTareas;
     private OnTareaClickListener listener;
 
+    //Constructor
+    public AdaptadorTarea(List<Tarea> listaTareas, OnTareaClickListener listener) {
+        this.listaTareas = listaTareas;
+        this.listener = listener;
+    }
+
     //Interfaz para gestionar los eventos de clic en las tareas
     public interface OnTareaClickListener {
         void onTareaHecha(int position, boolean isChecked);
         void onTareaEliminada(int position);
         void onItemClick(Tarea tarea);
-    }
-
-    //Constructor
-    public AdaptadorTarea(List<Tarea> listaTareas, OnTareaClickListener listener) {
-        this.listaTareas = listaTareas;
-        this.listener = listener;
     }
 
     //Método onCreateViewHolder para inflar el layout de cada item de la lista
@@ -55,7 +55,7 @@ public class AdaptadorTarea extends RecyclerView.Adapter<AdaptadorTarea.TareaVie
         return listaTareas.size();
     }
 
-    //Clase TareaViewHolder para representar los elementos de la vista
+    //Clase estática TareaViewHolder para representar los elementos de la vista
     public static class TareaViewHolder extends RecyclerView.ViewHolder {
         TextView tvNombreTarea;
         CheckBox cbHecha;
